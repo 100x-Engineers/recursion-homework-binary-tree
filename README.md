@@ -3,14 +3,15 @@
 ## This repo has:
 
 1. A recursive function, `depthFirstInsert`, that uses a depth-first approach to tree insertion.
-2. An imperative function, `breadthFirstTraverse`, that uses a bread-first approach to tree traversal.
+2. An imperative function, `breadthFirstTraverse`, that uses a breadth-first approach to tree traversal.
 3. Tests for verifying the output of both functions.
 
 ## What does the code do?
 
-1. Let's take a random string made up of numbers 0 to 9 and letters a to f. (String has no other elements except [0123456789abcdef]).
-2. `depthFirstInsert` creates a simple binary tree -- all elements lower than the root go to the left side and all elements greater than the root go the right side of the tree. Each element is inserted as a leaf element.
+1. `depthFirstInsert` function takes a `root` node and a `value`, and inserts the `value` into a binary tree starting at the `root`. Each `value` is a digit. To limit scope, but to also make things interesting, I chose hexadecimal digits as the set of "values" to use. All the values you will encounter in the sample code will be part of the set {0123456789abcdef}. However, if you test your code against any value that respects the Javascript comparator `<`, you can insert them in the tree. If you were to insert the elements from this array `['a', 5, 'test']` into the tree, it should still work.
+2. `breadthFirstTraverse` takes a root node, and traverses the entire tree in a breadth-first approach. This is simpler to understand and implement.
+3. `df-insert-bf-traverse.test.js` adds tests for the above two functions.
 
 ## Your task
-Write recursive function in iterative/imperative fashion.
-Write the iterative function in a recursive fashion.
+1. Write recursive function `depthFirstInsert`, in an iterative/imperative fashion.
+2. Write the iterative function, `breadthFirstTraverse`, in a recursive fashion.

@@ -1,5 +1,11 @@
 # Recursion Homework: Depth and Breadth First Searches
 
+## How to get the code working
+
+1. Clone the repository
+2. `npm install`
+3. `npm test` to run the tests
+
 ## This repo has:
 
 1. A recursive function, `depthFirstInsert`, that uses a depth-first approach to tree insertion.
